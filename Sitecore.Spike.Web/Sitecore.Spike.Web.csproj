@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sitecore.Glass.Spike.Web</RootNamespace>
-    <AssemblyName>Sitecore.Glass.Spike.Web</AssemblyName>
+    <RootNamespace>Sitecore.Spike.Web</RootNamespace>
+    <AssemblyName>Sitecore.Spike.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -41,11 +41,17 @@
     <Reference Include="Castle.Core">
       <HintPath>packages\Castle.Core.3.2.0\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
+    <Reference Include="Castle.Windsor">
+      <HintPath>packages\Castle.Windsor.3.2.0\lib\net45\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="Glass.Mapper">
       <HintPath>packages\Glass.Mapper.3.0.10.23\lib\net45\Glass.Mapper.dll</HintPath>
     </Reference>
     <Reference Include="Glass.Mapper.Sc">
       <HintPath>packages\Glass.Mapper.Sc.3.1.8.27\lib\net45\Glass.Mapper.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Glass.Mapper.Sc.CastleWindsor">
+      <HintPath>packages\Glass.Mapper.Sc.CastleWindsor.3.2.0.17\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -68,6 +74,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebActivatorEx">
+      <HintPath>packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="layouts\Sample Datasource Sublayout.ascx" />
@@ -84,6 +93,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\GlassMapperSc.cs" />
+    <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +154,8 @@
     <Content Include="App_Config\Security\GlobalRoles.config" />
     <Content Include="App_Config\XamlSharp.config" />
     <Content Include="packages.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
+    <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <None Include="Properties\PublishProfiles\GlassSpike.pubxml" />
     <Content Include="views\Web.config" />
     <None Include="Web.Debug.config">
@@ -165,7 +178,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>53271</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51842/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

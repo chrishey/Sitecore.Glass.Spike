@@ -9,9 +9,9 @@ using System.Linq;
 using Glass.Mapper.Sc.CastleWindsor;
 using Glass.Mapper.Sc.Configuration.Attributes;
 
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Sitecore.Glass.Spike.Web.App_Start.GlassMapperSc), "Start")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(Sitecore.Spike.Web.App_Start.GlassMapperSc), "Start")]
 
-namespace Sitecore.Glass.Spike.Web.App_Start
+namespace Sitecore.Spike.Web.App_Start
 {
 	public static class  GlassMapperSc
 	{

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Glass.Spike.Web", "Sitecore.Glass.Spike.Web.csproj", "{3F1B1F84-5502-4F69-AE15-EDF5DA3CFC64}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Spike.Web", "Sitecore.Spike.Web.csproj", "{3F1B1F84-5502-4F69-AE15-EDF5DA3CFC64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

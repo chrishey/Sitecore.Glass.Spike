@@ -5,7 +5,7 @@ using Glass.Mapper.Sc.CastleWindsor;
 using Glass.Mapper.Sc.Configuration.Attributes;
 
 
-namespace Sitecore.Glass.Spike.Web.App_Start
+namespace Sitecore.Spike.Web.App_Start
 {
     public static  class GlassMapperScCustom
     {
