@@ -57,12 +57,79 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="layouts\Sample Datasource Sublayout.ascx" />
+    <Content Include="layouts\Sample Inner Sublayout.ascx" />
+    <Content Include="layouts\Sample layout.aspx" />
+    <Content Include="layouts\Sample Sublayout.ascx" />
+    <Content Include="layouts\system\VIChecker.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.ascx" />
+    <Content Include="layouts\system\VisitorIdentification.aspx" />
+    <Content Include="layouts\system\VisitorIdentification.js" />
+    <Content Include="layouts\system\VisitorIdentificationCss.aspx" />
+    <Content Include="layouts\xmlcontrol.aspx" />
+    <Content Include="lib\Sitecore.Kernel.dll" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Config\Commands.config" />
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\ConnectionStringsOracle.config" />
+    <Content Include="App_Config\FieldTypes.config" />
+    <Content Include="App_Config\Icons.config" />
+    <Content Include="App_Config\Include\DataFolder.config.example" />
+    <Content Include="App_Config\Include\EventHandler.config.example" />
+    <Content Include="App_Config\Include\ForwardingSecurityEvents.config.example" />
+    <Content Include="App_Config\Include\ja-JP.config.example" />
+    <Content Include="App_Config\Include\LiveMode.config.example" />
+    <Content Include="App_Config\Include\ScalabilitySettings.config.example" />
+    <Content Include="App_Config\Include\Sitecore.AntiCsrf.config" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.config" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.Scaling.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Buckets.WarmupQueries.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.DefaultIndexConfiguration.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Core.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Master.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Index.Web.config" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Core.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Master.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.Lucene.Indexes.Sharded.Web.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ContentSearch.VerboseLogging.config.example" />
+    <Content Include="App_Config\Include\Sitecore.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcAnalytics.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.MvcExperienceEditor.config" />
+    <Content Include="App_Config\Include\Sitecore.MvcSimulator.config" />
+    <Content Include="App_Config\Include\Sitecore.PipelineProfiling.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.DedicatedInstance.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.EventProvider.Async.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Optimizations.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Parallel.config.disabled" />
+    <Content Include="App_Config\Include\Sitecore.Publishing.Recovery.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Shell.MarketingAutomation.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.ItemWebApi.config" />
+    <Content Include="App_Config\Include\Sitecore.Speak.Mvc.config" />
+    <Content Include="App_Config\Include\Sitecore.WebDAV.config" />
+    <Content Include="App_Config\Include\SitecoreSettings.config.example" />
+    <Content Include="App_Config\Include\SiteDefinition.config.example" />
+    <Content Include="App_Config\Include\WebDeploy.config.example" />
+    <Content Include="App_Config\Include\XslExtension.config.example" />
+    <Content Include="App_Config\LanguageDefinitions.config" />
+    <Content Include="App_Config\MimeTypes.config" />
+    <Content Include="App_Config\Portraits.config" />
+    <Content Include="App_Config\Prefetch\Common.config" />
+    <Content Include="App_Config\Prefetch\Core.config" />
+    <Content Include="App_Config\Prefetch\Master.config" />
+    <Content Include="App_Config\Prefetch\Webdb.config" />
+    <Content Include="App_Config\Prototypes.config" />
+    <Content Include="App_Config\Security\Domains.config" />
+    <Content Include="App_Config\Security\GlobalRoles.config" />
+    <Content Include="App_Config\XamlSharp.config" />
+    <None Include="Properties\PublishProfiles\GlassSpike.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
