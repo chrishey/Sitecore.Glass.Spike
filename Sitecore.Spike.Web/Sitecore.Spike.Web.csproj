@@ -158,6 +158,7 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <None Include="Properties\PublishProfiles\GlassSpike.pubxml" />
     <Content Include="views\Web.config" />
+    <Content Include="views\layouts\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
