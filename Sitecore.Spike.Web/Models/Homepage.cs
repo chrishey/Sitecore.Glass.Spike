@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Web;
 
-namespace Sitecore.Spike.Data.Models
+namespace Sitecore.Spike.Web.Models
 {
-    public class HomePage
+    public class Homepage
     {
         public virtual string Title { get; set; }
         public virtual string Text { get; set; }
