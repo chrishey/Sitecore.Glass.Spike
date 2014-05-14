@@ -8,16 +8,16 @@ using Sitecore.Spike.Web.Models;
 
 namespace Sitecore.Spike.Web.Controllers
 {
-    public class HomeController : Controller
+    public class NavigationController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /Navigation/
         public ActionResult Index()
         {
             var context = new SitecoreContext();
-            var model = context.GetCurrentItem<Homepage>();
+            var model = context.GetHomeItem<MenuItem>();
 
-            return View(model);
+            return View("Navigation", model);
         }
 	}
 }

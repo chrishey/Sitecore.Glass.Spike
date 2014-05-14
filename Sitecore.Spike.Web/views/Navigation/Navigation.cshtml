@@ -1,0 +1,14 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model Sitecore.Spike.Web.Models.MenuItem
+
+<div>
+    <a href="@Model.Url">@Model.Title</a>
+    
+    <ul>
+        @foreach (var item in Model.Children)
+        {
+            <li><a href="@item.Url">@item.Title</a></li>
+        }
+    </ul>
+</div>

@@ -54,9 +54,6 @@
       <HintPath>packages\Glass.Mapper.Sc.CastleWindsor.3.2.0.17\lib\net45\Glass.Mapper.Sc.CastleWindsor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Sitecore.Kernel">
-      <HintPath>lib\Sitecore.Kernel.dll</HintPath>
-    </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>lib\Sitecore.Mvc.dll</HintPath>
     </Reference>
@@ -111,6 +108,34 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Castle.Core.dll" />
+    <Content Include="bin\Castle.Core.xml" />
+    <Content Include="bin\Castle.Windsor.dll" />
+    <Content Include="bin\Castle.Windsor.xml" />
+    <Content Include="bin\Glass.Mapper.dll" />
+    <Content Include="bin\Glass.Mapper.Sc.CastleWindsor.dll" />
+    <Content Include="bin\Glass.Mapper.Sc.CastleWindsor.xml" />
+    <Content Include="bin\Glass.Mapper.Sc.dll" />
+    <Content Include="bin\Glass.Mapper.Sc.xml" />
+    <Content Include="bin\Glass.Mapper.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <None Include="bin\Sitecore.Kernel.dll" />
+    <Content Include="bin\Sitecore.Mvc.dll" />
+    <Content Include="bin\Sitecore.Spike.Web.dll" />
+    <Content Include="bin\Sitecore.Spike.Web.pdb" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.Deployment.dll" />
+    <Content Include="bin\System.Web.Webpages.Deployment.xml" />
+    <Content Include="bin\System.Web.Webpages.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.dll" />
+    <Content Include="bin\System.Web.Webpages.Razor.xml" />
+    <Content Include="bin\System.Web.Webpages.xml" />
+    <Content Include="bin\WebActivatorEx.dll" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,7 +144,9 @@
     <Compile Include="App_Start\GlassMapperScCustom.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Models\Homepage.cs" />
+    <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -185,6 +212,7 @@
     <Content Include="App_Config\XamlSharp.config" />
     <None Include="Properties\PublishProfiles\SitecoreSpike.pubxml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Navigation\Navigation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -208,7 +236,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>58425</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:51842/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

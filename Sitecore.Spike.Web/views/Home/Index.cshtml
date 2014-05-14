@@ -1,13 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@model Sitecore.Spike.Web.Models.Homepage
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
     <div>
-        Hello from the controller, the time is @DateTime.Now.ToShortDateString()
+        <h1>@Model.Title</h1>
+        @Model.Text
     </div>
-</body>
-</html>
+
