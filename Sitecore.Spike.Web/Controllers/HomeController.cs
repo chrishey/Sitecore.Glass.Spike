@@ -19,5 +19,13 @@ namespace Sitecore.Spike.Web.Controllers
 
             return View(model);
         }
+
+        public ActionResult News()
+        {
+            var context = new SitecoreContext();
+            var model = context.GetCurrentItem<Homepage>().News;
+
+            return View("RelatedNews", model);
+        }
 	}
 }

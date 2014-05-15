@@ -1,0 +1,17 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Mvc
+@model IEnumerable<Sitecore.Spike.Web.Models.NewsArticle>
+
+<h3>Related News</h3>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            <img src="@item.FeaturedImage.Src" alt="@item.FeaturedImage.Alt"/>
+            <h4>
+                <a href="@item.Url">@item.PageTitle</a>
+            </h4>
+            <p>@item.Abstract</p>
+        </li>
+    }
+</ul>
