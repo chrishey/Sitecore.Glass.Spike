@@ -1,7 +1,8 @@
-﻿@model Sitecore.Spike.Web.Models.Homepage
+﻿@using Sitecore.Mvc
+@model Sitecore.Spike.Web.Models.Homepage
 
     <div>
         <h1>@Model.Title</h1>
-        @Model.Text
+        @Html.Sitecore().Field("Text")
     </div>
 

@@ -215,7 +215,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Navigation\Navigation.cshtml" />
     <Content Include="Views\Home\RelatedNews.cshtml" />
-    <Content Include="Views\layouts\NewsContainer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

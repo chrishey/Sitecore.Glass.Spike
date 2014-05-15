@@ -9,6 +9,7 @@ namespace Sitecore.Spike.Web.Models
 {
     public class NewsArticle
     {
+        public virtual Guid Id { get; set; }
         [SitecoreField(FieldName = "Page Title")]
         public virtual string PageTitle { get; set; }
         public virtual string Abstract { get; set; }
