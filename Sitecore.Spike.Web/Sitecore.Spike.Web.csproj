@@ -145,6 +145,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Models\Homepage.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\NewsArticle.cs" />
@@ -215,6 +216,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Navigation\Navigation.cshtml" />
     <Content Include="Views\Home\RelatedNews.cshtml" />
+    <Content Include="Views\News\Article.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\layouts\ArticleContainer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

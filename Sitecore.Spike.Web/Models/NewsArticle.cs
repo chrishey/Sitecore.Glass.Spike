@@ -13,6 +13,7 @@ namespace Sitecore.Spike.Web.Models
         [SitecoreField(FieldName = "Page Title")]
         public virtual string PageTitle { get; set; }
         public virtual string Abstract { get; set; }
+        [SitecoreField(FieldName = "Main Body")]
         public virtual string MainBody { get; set; }
         public virtual Image FeaturedImage { get; set; }
         public virtual DateTime Date { get; set; }
